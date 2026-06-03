@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Phone | Mobile Repair Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="brand">My<span>Phone</span></div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#book">Book</a>
+    </nav>
+
+    <a href="tel:7972844121" class="nav-btn">Call Now</a>
+</header>
+
+<section id="home" class="hero">
+    <div class="hero-text">
+        <p class="tag">⚡ Premium Mobile Repair Studio</p>
+        <h1>Your Phone Deserves a Fresh Start</h1>
+        <p class="hero-desc">
+            Screen cracked? Battery draining? Water damage? We repair your device with style, speed, and care.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#book" class="main-btn">Book Repair</a>
+            <a href="#services" class="glass-btn">View Services</a>
+        </div>
+    </div>
+
+   <div class="hero-card">
+    <div class="phone">
+        <div class="camera"></div>
+        <div class="screen">
+            <h3>⭐ Trusted Service</h3>
+            <p>5000+ Happy Customers</p>
+
+            <div class="progress">
+                <span style="width:95%"></span>
+            </div>
+
+            <small>Customer Satisfaction 95%</small>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+<section id="services" class="services">
+    <p class="section-tag">What We Fix</p>
+    <h2>Repair Services Made Simple</h2>
+
+    <div class="service-grid">
+        <article class="service-card pink">
+            <span>📱</span>
+            <h3>Screen Repair</h3>
+            <p>Cracked, black spots, touch issue, or broken display fixed quickly.</p>
+        </article>
+
+        <article class="service-card blue">
+            <span>🔋</span>
+            <h3>Battery Change</h3>
+            <p>Get longer battery life with safe and high-quality replacement.</p>
+        </article>
+
+        <article class="service-card purple">
+            <span>💧</span>
+            <h3>Water Damage</h3>
+            <p>Deep cleaning and diagnosis for water-damaged smartphones.</p>
+        </article>
+
+        <article class="service-card orange">
+            <span>🔊</span>
+            <h3>Speaker Issue</h3>
+            <p>Low sound, no sound, mic issue, and speaker repairs available.</p>
+        </article>
+    </div>
+</section>
+
+<section id="process" class="process">
+    <div class="process-text">
+        <p class="section-tag">Easy Process</p>
+        <h2>Repair in 3 Simple Steps</h2>
+    </div>
+
+    <div class="steps">
+        <div class="step">
+            <b>01</b>
+            <h3>Book</h3>
+            <p>Submit your device issue.</p>
+        </div>
+        <div class="step">
+            <b>02</b>
+            <h3>Diagnose</h3>
+            <p>We check and confirm repair.</p>
+        </div>
+        <div class="step">
+            <b>03</b>
+            <h3>Repair</h3>
+            <p>Get your phone back fast.</p>
+        </div>
+    </div>
+</section>
+
+<section id="book" class="booking">
+    <div class="booking-box">
+        <div>
+            <p class="section-tag">Appointment</p>
+            <h2>Book Your Repair</h2>
+            <p>Fill the form and our technician will contact you soon.</p>
+        </div>
+
+        <form onsubmit="sendToWhatsApp(event)">
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="email" id="email" placeholder="Email Address" required>
+    <input type="text" id="model" placeholder="Phone Model" required>
+
+    <select id="problem" required>
+        <option value="">Select Problem</option>
+        <option>Screen Damage</option>
+        <option>Battery Issue</option>
+        <option>Water Damage</option>
+        <option>Speaker/Mic Issue</option>
+    </select>
+
+    <textarea id="message" placeholder="Describe your issue" rows="4"></textarea>
+    <button type="submit">Send Request</button>
+</form>
+    </div>
+</section>
+<script>
+function sendToWhatsApp(event) {
+    event.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let model = document.getElementById("model").value;
+    let problem = document.getElementById("problem").value;
+    let message = document.getElementById("message").value;
+
+    let phoneNumber = "917020703719";
+
+    let whatsappMessage =
+        "New Repair Booking%0A%0A" +
+        "Name: " + name + "%0A" +
+        "Email: " + email + "%0A" +
+        "Phone Model: " + model + "%0A" +
+        "Problem: " + problem + "%0A" +
+        "Message: " + message;
+
+    let url = "https://wa.me/" + phoneNumber + "?text=" + whatsappMessage;
+
+    window.open(url, "_blank");
+}
+</script>
+<section class="contact-section">
+    <div class="contact-container">
+
+```
+    <div class="contact-card">
+        <h2>📍 Visit Our Showroom</h2>
+        <p>
+            <strong>MyPhone Showroom</strong><br>
+            in front of YDCC bank,<br>
+            Pandharkawada, Maharashtra 445302
+        </p>
+    </div>
+
+    <div class="contact-card">
+        <h2>📞 Contact Us</h2>
+        <p>
+            Mobile: <a href="tel:7020703719">7020703719</a><br>
+            WhatsApp: <a href="https://wa.me/917020703719">Chat Now</a><br>  
+        </p>
+    </div>
+
+    <div class="contact-card">
+        <h2>🕒 Opening Hours</h2>
+        <p>
+            Monday - Sunday<br>
+            11:00 AM - 8:00 PM<br><br>
+           
+        </p>
+    </div>
+
+</div>
+```
+
+</section>
+
+<footer>
+    <h3>My<span>Phone</span></h3>
+    <p>Professional Mobile Repair Service | Fast • Reliable • Affordable</p>
+   
+</footer>
+
+
+</body>
+</html>
